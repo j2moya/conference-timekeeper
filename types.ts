@@ -19,3 +19,9 @@ export interface ConferencePlan {
   totalDurationMinutes: number;
   segments: Segment[];
 }
+
+export interface UserProfile {
+  name: string;
+  picture: string;
+  email: string;
+}
