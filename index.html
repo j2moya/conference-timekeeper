@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conference Timekeeper</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.21.0"
+  }
+}
+</script>
+    <style>
+      @media print {
+        /* Hide all elements on the page by default when printing */
+        body * {
+          visibility: hidden;
+        }
+        
+        /* Make only the printable area and its children visible */
+        #printable-area, #printable-area * {
+          visibility: visible;
+        }
+
+        /* Position the printable area to take up the entire page for printing,
+           removing any layout constraints from the main app. */
+        #printable-area {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          padding: 0;
+          margin: 0;
+          border: none !important;
+          box-shadow: none !important;
+        }
+
+        /* Ensure the body has a clean white background for printing */
+        body {
+          background: white !important;
+          margin: 0;
+        }
+      }
+    </style>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-900 text-white antialiased">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

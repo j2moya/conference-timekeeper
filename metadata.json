@@ -1,0 +1,5 @@
+{
+  "name": "Copy of Conference Timekeeper",
+  "description": "An application to plan and run timed conferences with integrated video and audio segments. Helps speakers stay on schedule by automatically transitioning between topics at pre-defined intervals.",
+  "requestFramePermissions": []
+}
